@@ -47,3 +47,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo PROD_BUJILD
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Ref is $GITHUB_REF"
